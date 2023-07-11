@@ -9,10 +9,9 @@ pipeline {
                 sh "docker compose build"
             }
         }
-        stage('Test') {
+        stage('Run') {
             steps {
-                echo 'Testing...'
-                sh "docker compose up -d"
+                echo 'Runing...'
             }
         }
     }

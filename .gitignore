@@ -31,6 +31,7 @@ jobs/**
 # performance when running even basic commands like 'git status'.
 builds
 indexing
+var
 
 # Exclude only config.xml files in repository subdirectories.
 !config.xml

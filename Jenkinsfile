@@ -2,13 +2,7 @@
 
 pipeline {
 
-    agent {
-        docker {
-            image 'wordpress:5.1.1-fpm-alpine'
-            args '-u root'
-        }
-    }
-
+    agent any
     stages {
         stage('Build') {
             steps {

@@ -24,8 +24,8 @@ services:
     - WORDPRESS_DB_USER=$MYSQL_USER
     - WORDPRESS_DB_PASSWORD=$MYSQL_PASSWORD
     - WORDPRESS_DB_NAME=wordpress
-    - MYSQL_USER=test
-    - MYSQL_USER=test 
+    - MYSQL_USER: test
+    - MYSQL_PASSWORD: test 
     volumes:
     - wordpress:/var/www/html
     networks:

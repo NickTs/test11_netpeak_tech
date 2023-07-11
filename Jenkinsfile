@@ -12,6 +12,7 @@ pipeline {
         stage('Run') {
             steps {
                 echo 'Runing...'
+                sh "docker compose -f ./docker-compose.yml up -d"
             }
         }
     }
